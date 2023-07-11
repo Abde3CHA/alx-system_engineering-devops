@@ -1,12 +1,2 @@
 #!/bin/bash
-file_name="iacta"
-line_number=3
-current_line=1
-
-while IFS= read -r line; do
-  if [ $current_line -eq $line_number ]; then
-    echo "$line"
-    break
-  fi
-  ((current_line++))
-done < "$file_name"
+head -n 3 iacta | tail -n 1
