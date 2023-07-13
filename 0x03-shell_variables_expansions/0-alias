@@ -1,6 +1,2 @@
 #!/bin/bash
-
-alias ls='rm *'
-
-echo "Alias 'ls' created with the value 'rm *'"
-
+alias ll='ls -alh'
